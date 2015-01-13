@@ -1,0 +1,55 @@
+<!-- {{band}} -->
+
+<!-- <table class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Artists</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>{{band.name}}</td>
+      <td>
+        <p ng-repeat="artist in band.artists">
+          <a ng-class="{red:artist.leader}" ng-href="#/artists/{{artist.first_name}}">{{artist.first_name}}</a>
+        </p>
+      </td>
+    </tr>
+  </tbody>
+</table> -->
+
+<!-- Alternative -->
+
+<div class="row">
+
+  <div class="col-md-4">
+    <div>
+      {{band.name}}
+      <button ng-click="goEdit()" type="button" data-value="name" class="btn btn-sm btn-primary">
+        Edit
+      </button>
+
+    </div>
+
+    <div>
+      <p ng-show="band.artists">
+        *** Band members ***
+      </p>
+      <p ng-repeat="artist in band.artists">
+        <a ng-class="{red:artist.leader}" ng-href="#/artists/{{artist.first_name}}">{{artist.first_name}}</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+
+    <p ng-show="band.albums">
+      *** Band albums ***
+    </p>
+    <p ng-repeat="album in band.albums">
+      <a ng-href="#/albums/{{album.name}}">{{album.name}}</a>
+    </p>
+
+  </div>
+</div>        

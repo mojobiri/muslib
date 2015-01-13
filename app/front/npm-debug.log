@@ -1,0 +1,204 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node', '/usr/local/bin/npm', 'install' ]
+2 info using npm@1.4.28
+3 info using node@v0.10.32
+4 verbose readDependencies using package.json deps
+5 verbose install where, deps [ '/home/denis/Dropbox/development/ruby/muslink/app/front',
+5 verbose install   [ 'bower',
+5 verbose install     'grunt',
+5 verbose install     'grunt-contrib-coffee',
+5 verbose install     'grunt-contrib-uglify',
+5 verbose install     'grunt-contrib-watch',
+5 verbose install     'grunt-ng-constant',
+5 verbose install     'http-server',
+5 verbose install     'karma',
+5 verbose install     'karma-junit-reporter',
+5 verbose install     'protractor',
+5 verbose install     'shelljs' ] ]
+6 info preinstall angular-seed@0.0.0
+7 verbose readDependencies using package.json deps
+8 verbose already installed skipping grunt@^0.4.5 /home/denis/Dropbox/development/ruby/muslink/app/front
+9 verbose already installed skipping grunt-contrib-coffee@^0.12.0 /home/denis/Dropbox/development/ruby/muslink/app/front
+10 verbose already installed skipping grunt-contrib-uglify@^0.6.0 /home/denis/Dropbox/development/ruby/muslink/app/front
+11 verbose already installed skipping grunt-contrib-watch@^0.6.1 /home/denis/Dropbox/development/ruby/muslink/app/front
+12 verbose already installed skipping grunt-ng-constant@^1.0.0 /home/denis/Dropbox/development/ruby/muslink/app/front
+13 verbose already installed skipping http-server@^0.6.1 /home/denis/Dropbox/development/ruby/muslink/app/front
+14 verbose already installed skipping karma@~0.10 /home/denis/Dropbox/development/ruby/muslink/app/front
+15 verbose already installed skipping karma-junit-reporter@^0.2.2 /home/denis/Dropbox/development/ruby/muslink/app/front
+16 verbose already installed skipping protractor@^1.1.1 /home/denis/Dropbox/development/ruby/muslink/app/front
+17 verbose already installed skipping shelljs@^0.2.6 /home/denis/Dropbox/development/ruby/muslink/app/front
+18 verbose already installed skipping bower@^1.3.1 /home/denis/Dropbox/development/ruby/muslink/app/front
+19 silly resolved []
+20 info build /home/denis/Dropbox/development/ruby/muslink/app/front
+21 verbose linkStuff [ false,
+21 verbose linkStuff   false,
+21 verbose linkStuff   false,
+21 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app' ]
+22 info linkStuff angular-seed@0.0.0
+23 verbose linkBins angular-seed@0.0.0
+24 verbose linkMans angular-seed@0.0.0
+25 verbose rebuildBundles angular-seed@0.0.0
+26 verbose rebuildBundles [ '.bin',
+26 verbose rebuildBundles   'bower',
+26 verbose rebuildBundles   'grunt',
+26 verbose rebuildBundles   'grunt-contrib-coffee',
+26 verbose rebuildBundles   'grunt-contrib-uglify',
+26 verbose rebuildBundles   'grunt-contrib-watch',
+26 verbose rebuildBundles   'grunt-ng-constant',
+26 verbose rebuildBundles   'http-server',
+26 verbose rebuildBundles   'karma',
+26 verbose rebuildBundles   'karma-chrome-launcher',
+26 verbose rebuildBundles   'karma-coffee-preprocessor',
+26 verbose rebuildBundles   'karma-firefox-launcher',
+26 verbose rebuildBundles   'karma-html2js-preprocessor',
+26 verbose rebuildBundles   'karma-jasmine',
+26 verbose rebuildBundles   'karma-junit-reporter',
+26 verbose rebuildBundles   'karma-phantomjs-launcher',
+26 verbose rebuildBundles   'karma-requirejs',
+26 verbose rebuildBundles   'karma-script-launcher',
+26 verbose rebuildBundles   'protractor',
+26 verbose rebuildBundles   'requirejs',
+26 verbose rebuildBundles   'shelljs' ]
+27 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-chrome-launcher
+28 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-chrome-launcher
+29 info preinstall karma-chrome-launcher@0.1.5
+30 verbose linkStuff [ false,
+30 verbose linkStuff   false,
+30 verbose linkStuff   false,
+30 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+31 info linkStuff karma-chrome-launcher@0.1.5
+32 verbose linkBins karma-chrome-launcher@0.1.5
+33 verbose linkMans karma-chrome-launcher@0.1.5
+34 verbose rebuildBundles karma-chrome-launcher@0.1.5
+35 info install karma-chrome-launcher@0.1.5
+36 info postinstall karma-chrome-launcher@0.1.5
+37 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-coffee-preprocessor
+38 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-coffee-preprocessor
+39 info preinstall karma-coffee-preprocessor@0.1.3
+40 verbose linkStuff [ false,
+40 verbose linkStuff   false,
+40 verbose linkStuff   false,
+40 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+41 info linkStuff karma-coffee-preprocessor@0.1.3
+42 verbose linkBins karma-coffee-preprocessor@0.1.3
+43 verbose linkMans karma-coffee-preprocessor@0.1.3
+44 verbose rebuildBundles karma-coffee-preprocessor@0.1.3
+45 verbose rebuildBundles [ '.bin', 'coffee-script' ]
+46 info install karma-coffee-preprocessor@0.1.3
+47 info postinstall karma-coffee-preprocessor@0.1.3
+48 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-firefox-launcher
+49 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-firefox-launcher
+50 info preinstall karma-firefox-launcher@0.1.3
+51 verbose linkStuff [ false,
+51 verbose linkStuff   false,
+51 verbose linkStuff   false,
+51 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+52 info linkStuff karma-firefox-launcher@0.1.3
+53 verbose linkBins karma-firefox-launcher@0.1.3
+54 verbose linkMans karma-firefox-launcher@0.1.3
+55 verbose rebuildBundles karma-firefox-launcher@0.1.3
+56 info install karma-firefox-launcher@0.1.3
+57 info postinstall karma-firefox-launcher@0.1.3
+58 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-html2js-preprocessor
+59 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-html2js-preprocessor
+60 info preinstall karma-html2js-preprocessor@0.1.0
+61 verbose linkStuff [ false,
+61 verbose linkStuff   false,
+61 verbose linkStuff   false,
+61 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+62 info linkStuff karma-html2js-preprocessor@0.1.0
+63 verbose linkBins karma-html2js-preprocessor@0.1.0
+64 verbose linkMans karma-html2js-preprocessor@0.1.0
+65 verbose rebuildBundles karma-html2js-preprocessor@0.1.0
+66 info install karma-html2js-preprocessor@0.1.0
+67 info postinstall karma-html2js-preprocessor@0.1.0
+68 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-jasmine
+69 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-jasmine
+70 info preinstall karma-jasmine@0.1.5
+71 verbose linkStuff [ false,
+71 verbose linkStuff   false,
+71 verbose linkStuff   false,
+71 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+72 info linkStuff karma-jasmine@0.1.5
+73 verbose linkBins karma-jasmine@0.1.5
+74 verbose linkMans karma-jasmine@0.1.5
+75 verbose rebuildBundles karma-jasmine@0.1.5
+76 info install karma-jasmine@0.1.5
+77 info postinstall karma-jasmine@0.1.5
+78 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-phantomjs-launcher
+79 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-phantomjs-launcher
+80 info preinstall karma-phantomjs-launcher@0.1.4
+81 verbose linkStuff [ false,
+81 verbose linkStuff   false,
+81 verbose linkStuff   false,
+81 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+82 info linkStuff karma-phantomjs-launcher@0.1.4
+83 verbose linkBins karma-phantomjs-launcher@0.1.4
+84 verbose linkMans karma-phantomjs-launcher@0.1.4
+85 verbose rebuildBundles karma-phantomjs-launcher@0.1.4
+86 verbose rebuildBundles [ '.bin', 'phantomjs' ]
+87 info install karma-phantomjs-launcher@0.1.4
+88 info postinstall karma-phantomjs-launcher@0.1.4
+89 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-requirejs
+90 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-requirejs
+91 info preinstall karma-requirejs@0.2.2
+92 verbose linkStuff [ false,
+92 verbose linkStuff   false,
+92 verbose linkStuff   false,
+92 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+93 info linkStuff karma-requirejs@0.2.2
+94 verbose linkBins karma-requirejs@0.2.2
+95 verbose linkMans karma-requirejs@0.2.2
+96 verbose rebuildBundles karma-requirejs@0.2.2
+97 info install karma-requirejs@0.2.2
+98 info postinstall karma-requirejs@0.2.2
+99 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-script-launcher
+100 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/karma-script-launcher
+101 info preinstall karma-script-launcher@0.1.0
+102 verbose linkStuff [ false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   false,
+102 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+103 info linkStuff karma-script-launcher@0.1.0
+104 verbose linkBins karma-script-launcher@0.1.0
+105 verbose linkMans karma-script-launcher@0.1.0
+106 verbose rebuildBundles karma-script-launcher@0.1.0
+107 info install karma-script-launcher@0.1.0
+108 info postinstall karma-script-launcher@0.1.0
+109 verbose rebuild bundle /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/requirejs
+110 info build /home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/requirejs
+111 info preinstall requirejs@2.1.15
+112 verbose linkStuff [ false,
+112 verbose linkStuff   false,
+112 verbose linkStuff   false,
+112 verbose linkStuff   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules' ]
+113 info linkStuff requirejs@2.1.15
+114 verbose linkBins requirejs@2.1.15
+115 verbose link bins [ { 'r.js': './bin/r.js' },
+115 verbose link bins   '/home/denis/Dropbox/development/ruby/muslink/app/front/node_modules/.bin',
+115 verbose link bins   false ]
+116 verbose linkMans requirejs@2.1.15
+117 verbose rebuildBundles requirejs@2.1.15
+118 info install requirejs@2.1.15
+119 info postinstall requirejs@2.1.15
+120 info install angular-seed@0.0.0
+121 info postinstall angular-seed@0.0.0
+122 verbose unsafe-perm in lifecycle true
+123 info angular-seed@0.0.0 Failed to exec postinstall script
+124 error angular-seed@0.0.0 postinstall: `bower install`
+124 error Exit status 8
+125 error Failed at the angular-seed@0.0.0 postinstall script.
+125 error This is most likely a problem with the angular-seed package,
+125 error not with npm itself.
+125 error Tell the author that this fails on your system:
+125 error     bower install
+125 error You can get their info via:
+125 error     npm owner ls angular-seed
+125 error There is likely additional logging output above.
+126 error System Linux 3.13.0-37-generic
+127 error command "/usr/local/bin/node" "/usr/local/bin/npm" "install"
+128 error cwd /home/denis/Dropbox/development/ruby/muslink/app/front
+129 error node -v v0.10.32
+130 error npm -v 1.4.28
+131 error code ELIFECYCLE
+132 verbose exit [ 1, true ]

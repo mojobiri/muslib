@@ -1,0 +1,37 @@
+Musical application-library.
+
+Install DEV instructions:
+- Install rvm, ruby
+- Install all gems (bundle install from the root dir)
+- Install nodejs
+- Install bower (npm install bower)
+- Install front dependencies (cd app/front && bower install)
+
+To start application, use rackup command from the muslink root folder. It uses thin web server.
+
+To seed db use
+bundle exec rake db:seed
+
+To create migrations
+rake db:create_migration NAME=<name_of_migration>
+
+Run migrations
+rake db:migrate
+
+To play with application and ActiveRecord in the console, you can use irb:
+1.9.3-p484 :001 > load "./app/muslink.rb"
+
+
+FRONT DEVELOPMENT NOTES:
+Angular development uses CoffeeScript in app/front/app/js/src folder.
+
+There is a grunt task (grunt watch) for watching app/front/app/js/src/*.coffee files for change and compile into app/front/app/js/*.js files.
+
+Rollback ALL migrations:
+rake db:migrate VERSION=0
+
+Rollback last migration:
+rake db:rollback STEP=1
+
+Show all tasks:
+rake -T

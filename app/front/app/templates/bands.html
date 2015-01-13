@@ -1,0 +1,87 @@
+<!-- <table class="table">
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Name</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr ng-repeat="band in bands">
+      <td>{{band.id}}</td>
+      <td><a ng-href="#/bands/{{band.name}}/{{band.id}}">{{band.name}}</a></td>
+    </tr>
+  </tbody>
+</table> -->
+
+
+<!-- <ul class="bcontainer clearfix">
+  <li class="bitem" ng-repeat="band in bands">
+    <a class="band_link" ng-href="#/bands/{{band.name}}/{{band.id}}">{{band.name}}</a>
+    <band-rating data-ng:rating="{{band.rating.value}}" data-ng:id="{{band.id}}"></band-rating>
+  </li>
+</ul>
+ -->
+<!-- Alternative -->
+<div class="row">
+  <div class="col-md-6">
+    <div class="row">
+      <div class="col-md-12">
+        <label for="search">Sort by:</label>
+        <!-- <input ng-model="q" id="search" class="form-control" placeholder="Search band"> -->
+      </div>
+      <div class="col-md-12">
+        <!-- <button type="button" class="btn btn-sm" ng-class="{'btn-primary':order_by == 'name', 'btn-default':order_by != 'name'}"> -->
+        <button type="button" data-value="name" class="btn btn-sm" ng-class="order_by == 'name' ? 'btn-primary' : 'btn-default'" ng-click="orderBy($event)">
+          name <span ng-show="order_by == 'name'" class="glyphicon" ng-class="order == 'asc' ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down'"></span>
+        </button>
+        <button type="button" data-value="rating" class="btn btn-sm" ng-class="order_by == 'rating' ? 'btn-primary' : 'btn-default'" ng-click="orderBy($event)">
+          rating <span ng-show="order_by == 'rating'" class="glyphicon" ng-class="order == 'asc' ? 'glyphicon-chevron-up' : 'glyphicon-chevron-down'"></span>
+        </button>
+        <div ng-repeat="genre in genres">
+          <button type="button" class="btn btn-sm btn-default">
+            {{genre.name}} &nbsp<span class="badge pull-right"> {{genre.count}}</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-3">
+    <label for="search">Search:</label>
+    <input ng-model="q" id="search" class="form-control" placeholder="Search band">
+  </div>
+
+  <div class="col-md-3">
+    <label for="search">Items per page:</label>
+    <input type="number" min="1" max="100" class="form-control" ng-model="pageSize">
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <span ng-show="totalBands"><span class="label label-success">{{totalBands}}</span> bands found.</span>
+    <span ng-hide="totalBands">No bands found.</span>
+  </div>
+</div>
+
+
+<div class="row bcontainer clearfix">
+  <div dir-paginate="band in bands | itemsPerPage: pageSize" total-items="totalBands" current-page="currentPage">
+    <div class="col-md-3 bitem">
+      <a class="band_link" ng-href="#/bands/{{band.name}}/{{band.id}}">{{band.name}}</a>
+      <band-rating class="rating red" data-ng:rating="{{band.rating.value}}" data-ng:id="{{band.id}}"></band-rating>
+    </div>
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dir-pagination-controls boundary-links="true" on-page-change="pageChanged(newPageNumber)" template-url="./bower_components/angular-utils-pagination/dirPagination.tpl.html"></dir-pagination-controls>
+  </div>
+</div>
+
+
+
+<!-- 
+<li dir-paginate-start="meal in meals | filter:q | itemsPerPage: pageSize" current-page="currentPage">{{ meal }}</li>
+<li dir-paginate-end></li> -->

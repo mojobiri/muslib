@@ -1,0 +1,70 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.red {
+  color: red;
+}
+
+.bcontainer {
+  margin-left: -20px;
+  list-style-type: none;
+  padding: 0;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bitem {
+  width: 200px;
+  height: 200px;
+  float: left;
+  padding: 0;
+  /*text-align: center;*/
+  border: 1px solid #000;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  /*line-height: 200px;*/
+  overflow: hidden;
+}
+
+.band_link {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+  line-height: 20px;
+  max-width: 150px;
+}
+
+.rating {
+  display: block;
+  padding-top: 10px
+}
+.nav, .pagination, .carousel, .panel-title a { cursor: pointer; }

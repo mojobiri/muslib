@@ -1,0 +1,60 @@
+<!-- <div class="row">
+
+  <div class="col-md-4">
+    <div>
+      {{band.name}}
+    </div>
+
+    <div>
+      <p ng-show="band.artists">
+        *** Band members ***
+      </p>
+      <p ng-repeat="artist in band.artists">
+        <a ng-class="{red:artist.leader}" ng-href="#/artists/{{artist.first_name}}">{{artist.first_name}}</a>
+      </p>
+    </div>
+  </div>
+
+  <div class="col-md-8">
+
+    <p ng-show="band.albums">
+      *** Band albums ***
+    </p>
+    <p ng-repeat="album in band.albums">
+      <a ng-href="#/albums/{{album.name}}">{{album.name}}</a>
+    </p>
+
+  </div>
+</div> -->
+<h3>Edit band {{band.oldName}}</h3>
+<form name="editBand">
+  <div class="form-group" ng-class="(editBand.bName.$dirty && editBand.bName.$invalid) ? 'has-error' : ''" style="display:inline-block;">
+    <label class="control-label" for="inputSuccess1">Band name</label><br>
+    <input type='text' class="form-control" id="inputSuccess1" value="{{bandsProp.name}}" ng-model="bandsProp.name" name='bName' required ng-trim="true" ng-minlength="2" ng-maxlength="40" maxlength="41" style="width: 300px;display:inline-block;">
+  </div>
+  <div class="form-group" ng-show="editBand.bName.$dirty && editBand.bName.$invalid" ng-class="(editBand.bName.$dirty && editBand.bName.$invalid) ? 'has-error' : 'has-success'" style="display:inline-block;">
+    <span class="control-label" ng-show="editBand.bName.$error.required">Name can't be blank.</span>
+    <span class="control-label" ng-show="editBand.bName.$error.minlength">Should be more then 1 symbol.</span>
+    <span class="control-label" ng-show="editBand.bName.$error.maxlength">Should be less then 40 symbols.</span>
+  </div>
+  <span ng-show="dup" style="display:inline-block;">Band <a ng-href="#/bands/{{dup.name}}/{{dup.id}}">{{dup.name}}</a> already exists.</span>
+
+  <div class="form-group">
+    <label class="control-label">Sellect band genres</label><br>
+    <ui-select multiple ng-model="bandsProp.genres" theme="bootstrap" style="width: 300px;display:inline-block;">
+      <ui-select-match placeholder="Select genres...">{{$item}}</ui-select-match>
+      <ui-select-choices repeat="genre in bandsProp.availableGenres | filter:$select.search">
+        {{genre}}
+      </ui-select-choices>
+    </ui-select>
+    <div class="form-group" ng-class="(errors.addGenre.message) ? 'has-error' : ''" style="display:inline-block;">
+      <label class="control-label">or add new one</label>
+      <input type='text' class="form-control" id="new_genre" style="width: 150px;display:inline-block;" ng-model="bandsProp.newGenre" ng-change="clearAddGenreErrors()">
+      <button class="btn btn-sm btn-primary" ng-click="addGenre()">Add</button>
+      <span ng-show="errors.addGenre.message" class="control-label">{{errors.addGenre.message}}</span>
+    </div>
+    <!-- <p>Selected: {{bandsProp.genres}}</p> -->
+  </div>
+
+  <button type='submit' class="btn btn-primary" ng-click="update(band)" ng-disabled="editBand.$invalid">Save</button>
+</form>
